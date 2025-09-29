@@ -29,3 +29,7 @@ BEGIN
             ERROR_MESSAGE() AS ErrorMessage;
     END CATCH
 END;
+
+-- Indexes to optimize performance
+CREATE INDEX IDX_Sales_CustomerID ON Sales(CustomerID);
+CREATE INDEX IDX_Sales_SaleDate ON Sales(SaleDate);
